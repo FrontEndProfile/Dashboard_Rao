@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.menu-collapse.full {
+  padding-left: 7.5rem !important;
+}
+
+.radial-progress {
+  background-color: transparent;
+}
+
+.nav-block {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+
+  .text-10xl {
+    font-size: 13px;
+  }
+
+  .text-lg {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .px-12 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .w-44 {
+    width: 10rem;
+  }
+
+  .text-base {
+    font-size: 0.9rem;
+  }
+
+  .px-8 {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+
+  .xl\:pl-60 {
+    padding-left: 13rem !important;
+  }
+
+  .p-3 {
+    padding: 0.45rem;
+  }
+
+  .text-11xl {
+    font-size: 15px;
+  }
+
+  .text-9xl {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .px-12 {
+    padding-right: 1rem !important;
+  }
+.img-width{
+  width: 97px;
+}
+  .text-11xl {
+    font-size: 13px;
+  }
+  .py-2\.5 {
+    padding-top: 0.425rem;
+    padding-bottom: 0.425rem;
+}
+.py-3 {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+.py-3 {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+.py-6 {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.pt-16 {
+  padding-top: 2.5rem;
+}
+.my-9 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pt-48 {
+  padding-top: 8rem;
+}
+.py-12 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.h-12 {
+  height: 2.67rem;
+}
+.sm\:text-base {
+  font-size: 0.8rem !important;
+}
+.py-2\.5 {
+  padding-top: 0.525rem;
+  padding-bottom: 0.525rem;
+}
+  .text-base {
+    font-size: 0.7rem;
+  }
+
+  .text-12xl {
+    font-size: 12px;
+  }
+
+  td span a {
+    font-size: 0.8rem;
+  }
+
+  .sm\:text-base {
+    font-size: 0.9rem;
+  }
+
+  .text-10xl {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .text-2xl {
+    font-size: 1.2rem;
+  }
+
+  .text-lg {
+    font-size: 1rem;
+  }
+
+  .break .pl-3 {
+    padding-left: 0rem;
+  }
+
+  .break .text-xs {
+    font-size: 0.60rem;
+  }
+
+  .fix-height {
+    height: 284px;
+  }
+
+  .md\:w-60 {
+    width: 13rem !important;
+  }
+  .md\:pl-64 {
+    padding-left: 14rem !important;
+}
+}
+
+@media (max-width: 1275px) {
+  .break br {
+    display: block !important;
+  }
+
+  .break .pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .break .text-xs {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .md\:pl-64 {
+    padding-left: 2rem !important;
+  }
+
+  #form1 {
+    display: none;
+  }
+
+  .nav-block {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .center {
+    margin: 10px auto;
+  }
+
+  .md\:pl-64 {
+    padding-left: 1rem !important;
+  }
+}
+
+.none {
+  width: 101px !important;
+}
+
+.show {
+  display: block;
+}
+
+.space {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.hiddenn {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}

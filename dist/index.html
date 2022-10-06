@@ -1,0 +1,702 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section class="text-gray-600 body-font bg-gray-1000">
+    <div>
+      <div class="-my-8 divide-y-2 divide-gray-100">
+        <div class="py-8 xl:flex flex-wrap md:flex-nowrap ">
+          <div id="form1"
+            class="xxl:w-60 fixed   md:w-60 md:mb-0 hide top-0	h-full left-0 py-8 bg-dark-1000  mb-6 pt-7 flex-shrink-0 flex flex-col ">
+            <a href="#" onclick="changeImage()"><img src="images/hamburger.svg" class="absolute -right-6 top-[130px]"
+                id="button"></a>
+            <div class="sidebar-header py-7">
+              <img src="images/logo.svg" class="px-7 w-44 logo">
+              <img src="images/collapse-logo.svg" class="px-7 w-20 hidden hidee">
+            </div>
+            <div class="scrollbar-hide overflow-y-auto h-[calc(100% - 113px)]">
+              <ul class="pt-16 ">
+                <li class="px-8 bg-white-1100 py-2 border-l-2"><a href="#"
+                    class="flex font-normal text-base text-white-1000"><img src="images/Category.svg"
+                      class="pr-3 left"><span class="logo">Dashboard</span></a></li>
+                <li class="px-8  py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a href="#"
+                    class="flex font-normal  text-base"><img src="images/Calender.svg" class="pr-3 left"><span
+                      class="logo">Calendar</span></a></li>
+                <li class="px-8 py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a href="#"
+                    class="flex font-normal  text-base"><img src="images/Inbox.svg" class="pr-3 left"><span
+                      class="logo">Imports</span></li>
+                <li class="px-8  py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a href="#"
+                    class="flex font-normal   text-base"><img src="images/Box.svg" class="pr-3 left"><span
+                      class="logo">Playbook</span></a></li>
+              </ul>
+              <div class=" opacity-80 mx-8 my-9 h-px border border1 border-gray-900"></div>
+              <ul class="pt-3">
+                <li class="px-8  py-2 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a href="#"
+                    class="flex font-normal  text-base"><img src="images/trades.svg" class="pr-3 left"><span
+                      class="logo">Trades</span></a></li>
+                <li class="px-8  py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a href="#"
+                    class="flex font-normal  text-base"><img src="images/Document.svg" class="pr-3 left"><span
+                      class="logo">Reports</span></a></li>
+                <li class="px-8 py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a href="#"
+                    class="flex font-normal  text-base"><img src="images/box.svg" class="pr-3 left"><span
+                      class="logo">Settings</span></a></li>
+              </ul>
+              <div class="opacity-80 mx-8 mt-9 h-px  border border1 border-gray-900"></div>
+              <ul class="pt-3">
+                <li class="px-8 py-2 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a href="#"
+                    class="flex font-normal text-base"><img src="images/Download.svg" class="pr-3 left"><span
+                      class="logo">Download Report</span></a>
+                </li>
+              </ul>
+              <ul class="pt-48">
+                <li class=" pl-8 hidee hidden">
+                  <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="flex items-center"
+                    type="button"><img src="images/img.svg" class="w-8 h-8"><svg class="ml-2" width="10" height="5"
+                      viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L5 5L10 0H0Z" fill="#A1A0A3" />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdown"
+                    class="hidden z-10 w-32 bg-white  rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                    <ul class="py-2 px-2 rounded text-xs text-gray-700  bg-dark-1000 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                      <li>
+                        <a href="#" class="font-normal text-white-600   text-xs ">Philip II <br> <span
+                            class="text-xs text-white-700">
+                            philip3@gmail.com</span></a></a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="px-5  py-2 flex items-center  justify-end logo"><a href="#"><img src="images/img.svg"
+                      class="mr-2"></a><a href="#" class="font-normal text-white-600 text-base pl-2.5">Philip II <br> <span
+                      class="text-xs text-white-700">
+                      philip3@gmail.com</span></a>
+                      <button id="dropdownDefault7" data-dropdown-toggle="dropdown7" class="flex items-center"
+                      type="button"><img src="images/icon.svg" class="ml-2.5">
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown7"
+                      class="hidden z-10 w-16 bg-white  rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                      <ul class="py-2 px-2 rounded text-xs text-center text-gray-700  bg-white-1000 dark:text-gray-200" aria-labelledby="dropdownDefault7">
+                        <li>
+                          <a href="#" class="font-normal text-dark-1000   text-xs ">1</a></a>
+                        </li>
+                        <li>
+                          <a href="#" class="font-normal text-dark-1000   text-xs ">2</a></a>
+                        </li>
+                        <li>
+                          <a href="#" class="font-normal text-dark-1000   text-xs ">3</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+              </ul>
+              <div class=" opacity-80 mx-8 my-8 h-px  border border1 border-gray-900"></div>
+              <ul>
+                <li class="px-8 py-2 hover:bg-white-1100  text-white-600 opacity-60 hover:opacity-100 "><a href="#"
+                    class="flex font-normal  text-base"><img src="images/logout.svg" class="pr-3 left"><span
+                      class="logo">Log
+                      Out</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:flex-grow">
+
+            <div class="bg-white-500 px-12 sm:px-7 py-6 md:flex justify-between right-space md:pl-64 menu-collapse">
+              <div>
+                <div class="flex items-center">
+                  <div class=" nav-block  pb-2   flex-row">
+                    <div id="mySidenav"
+                      class="translate-X-4.25  bg-dark-1000 overflow-x-hidden z-10	scrollbar-hide left-0 top-0 fixed h-full w-64"
+                      style="transition: 0.5s;   transform: translateX(-259px);">
+                      <a href="javascript:void(0)" class="absolute top-0 right-6 text-white-1000 text-4xl "
+                        onclick="closeNav()">&times;</a>
+                      <div class="p-5">
+                      </div>
+                      <div class="w-full md:mb-0 mb-6 py-6   flex-shrink-0 flex flex-col ">
+                        <img src="images/logo.svg" class="px-7 w-44">
+                        <ul class="pt-9 ">
+                          <li class="px-8 bg-white-1100 py-2 border-l-2"><a href="#"
+                              class="flex font-normal text-white-1000"><img src="images/Category.svg"
+                                class="pr-3">Dashboard</a></li>
+                          <li class="px-8  py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 ">
+                            <a href="#" class="flex font-normal  text-base"><img src="images/Calender.svg"
+                                class="pr-3">Calendar</a>
+                          </li>
+                          <li class="px-8 py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a
+                              href="#" class="flex font-normal  text-base"><img src="images/Inbox.svg"
+                                class="pr-3">Imports</a></li>
+                          <li class="px-8  py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 ">
+                            <a href="#" class="flex font-normal   text-base"><img src="images/Box.svg"
+                                class="pr-3">Playbook</a>
+                          </li>
+                        </ul>
+                        <div class="bg-gray-900 opacity-80 mx-8 my-3 h-px border border-gray-900"></div>
+                        <ul class="pt-3">
+                          <li class="px-8  py-2 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 ">
+                            <a href="#" class="flex font-normal  text-base"><img src="images/trades.svg"
+                                class="pr-3">Trades</a>
+                          </li>
+                          <li class="px-8  py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 ">
+                            <a href="#" class="flex font-normal  text-base"><img src="images/Document.svg"
+                                class="pr-3">Reports</a>
+                          </li>
+                          <li class="px-8 py-3 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 "><a
+                              href="#" class="flex font-normal  text-base"><img src="images/box.svg"
+                                class="pr-3">Settings</a></li>
+                        </ul>
+                        <div class="bg-gray-900 opacity-80 mx-8 mt-6 h-px  border border-gray-900"></div>
+                        <ul class="pt-3">
+                          <li class="px-8  py-2 hover:bg-white-1100 mt-2 text-white-600 opacity-60 hover:opacity-100 ">
+                            <a href="#" class="flex font-normal text-base"><img src="images/Download.svg"
+                                class="pr-3">Download Report</a>
+                          </li>
+                        </ul>
+                        <ul class="pt-20">
+                          <li class=" pl-8 hidee hidden">
+                            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="flex items-center"
+                              type="button"><img src="images/img.svg" class="w-8 h-8"><svg class="ml-2" width="10" height="5"
+                                viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L5 5L10 0H0Z" fill="#A1A0A3" />
+                              </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown"
+                              class="hidden z-10 w-32 bg-white  rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                              <ul class="py-2 px-2 rounded text-xs text-gray-700  bg-dark-1000 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                                <li>
+                                  <a href="#" class="font-normal text-white-600   text-xs ">Philip II <br> <span
+                                      class="text-xs text-white-700">
+                                      philip3@gmail.com</span></a></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="px-5  py-2 flex items-center  justify-end logo"><a href="#"><img src="images/img.svg"
+                                class="mr-2"></a><a href="#" class="font-normal text-white-600 text-base pl-2.5">Philip II <br> <span
+                                class="text-xs text-white-700">
+                                philip3@gmail.com</span></a>
+                                <button id="dropdownDefault77" data-dropdown-toggle="dropdown77" class="flex items-center"
+                                type="button"><img src="images/icon.svg" class="ml-2.5">
+                              </button>
+                              <!-- Dropdown menu -->
+                              <div id="dropdown77"
+                                class="hidden z-10 w-32 bg-white  rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                                <ul class="py-2 px-2 rounded text-xs text-gray-700  bg-dark-1000 dark:text-gray-200" aria-labelledby="dropdownDefault77">
+                                  <ul class="py-2 px-2 rounded text-xs text-center text-gray-700  bg-white-1000 dark:text-gray-200" aria-labelledby="dropdownDefault7">
+                                    <li>
+                                      <a href="#" class="font-normal text-dark-1000   text-xs ">1</a></a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="font-normal text-dark-1000   text-xs ">2</a></a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="font-normal text-dark-1000   text-xs ">3</a></a>
+                                    </li>
+                                  </ul>
+                                </ul>
+                              </div>
+                            </li>
+                        </ul>
+                        <div class="bg-gray-900 opacity-80 mx-8 my-6 h-px  border border-gray-900"></div>
+                        <ul>
+                          <li class="px-8 py-2 hover:bg-white-1100  text-white-600 opacity-60 hover:opacity-100 "><a
+                              href="#" class="flex font-normal  text-base"><img src="images/logout.svg" class="pr-3">Log
+                              Out</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <span onclick="openNav()" class=""><img src="images/bars-solid.svg" class="w-5 pt-3 mr-4"></span>
+                  </div>
+                  <form class="xl:w-348 w-full">
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only ">Search</label>
+                    <div class="relative">
+                      <input type="search" id="default-search"
+                        class="block p-4  w-full text-sm text-dark-1000 bg-white h-12 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search" required>
+                      <div class="flex absolute inset-y-0 right-0 items-center pr-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="flex md:mt-0 mt-3 justify-center">
+                <button id="dropdownDefault2" data-dropdown-toggle="dropdown2"
+                  class="text-dark-1000  font-semibold bg-transparent border border-dark-1000  focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg sm:text-base text-xs sm:px-4 px-2 py-2.5 text-center inline-flex items-center"
+                  type="button">Demo<svg class="ml-2 h-4 w-4" viewBox="0 0 16 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L8 7L15 1" stroke="#111214" stroke-width="2" />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdown2"
+                  class="hidden z-10 w-28 bg-white-1000 rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+                  style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 410.4px, 0px);"
+                  data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+                  <ul class="py-1 text-sm text-dark-1000 dark:text-gray-200" aria-labelledby="dropdownDefault2">
+                    <li>
+                      <a href="#"
+                        class="block py-2 px-4 text-dark-1000 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Demo</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block py-2 px-4 text-dark-1000 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Setting</a>
+                    </li>
+                  </ul>
+                </div>
+
+
+                <a href="#">
+                  <div class="bg-white-1000 py-3 md:ml-12 ml-4 w-14 mr-4 px-4 rounded-lg">
+                    <img src="images/bell.svg" class="img-fluid">
+                  </div>
+                </a>
+                <button type="button"
+                  class="text-white-1000 flex items-center bg-dark-1000 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-lg sm:text-base text-xs  font-semibold px-3 md:px-5 py-3">Add
+                  Trades<svg width="24" height="24" class="ml-2 hover:text-dark-1000" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6V12M12 12V18M12 12H18M12 12H6" stroke="#F2F2F2" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-12 py-12 bg-gray-1000   right-space  md:pl-64 menu-collapse">
+              <div class="flex flex-wrap ">
+                <div class="xl:w-1/4 md:w-1/2 sm:w-1/2 w-full p-3 break">
+                  <div class="bg-gray-100 pt-2 px-3 pb-4 rounded-lg flex-1">
+                    <div class="flex justify-between items-center">
+                      <h5 class="text-lg font-bold text-dark-900">Win Ratio</h5>
+                      <button id="dropdownDefault2" data-dropdown-toggle="dropdown2"
+                        class="text-white-1000 font-semibold bg-blue-900   focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-base px-3 py-2 text-center inline-flex items-center"
+                        type="button">Month<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.6651 9.52436C16.958 9.81725 16.958 10.2921 16.6651 10.585L12.7732 14.4769C12.6326 14.6176 12.4418 14.6966 12.2429 14.6966C12.044 14.6966 11.8532 14.6176 11.7125 14.4769L7.82065 10.585C7.52776 10.2921 7.52776 9.81725 7.82065 9.52436C8.11355 9.23146 8.58842 9.23146 8.88131 9.52436L12.2429 12.8859L15.6044 9.52436C15.8973 9.23146 16.3722 9.23146 16.6651 9.52436Z"
+                            fill="#FCFAFF" />
+                        </svg>
+                      </button>
+                      <!-- Dropdown menu -->
+                      <div id="dropdown2"
+                        class="hidden z-10 w-28 bg-white-1000 rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 410.4px, 0px);"
+                        data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+                        <ul class="py-1 text-sm text-dark-1000 dark:text-gray-200" aria-labelledby="dropdownDefault2">
+                          <li>
+                            <a href="#"
+                              class="block py-2 px-4 text-dark-1000 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Week</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block py-2 px-4 text-dark-1000 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Year</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-8">
+                      <img src="images/bar1.png" class="img-fluid img-width">
+                      <div class="pl-3 ">
+                        <h5 class="flex items-center font-bold text-xs text-gray-1100 "><span
+                            class="h-2 w-2 rounded-lg bg-blue-900 mr-2"></span>Winning Trades</h5>
+                        <h2 class="text-dark-900 font-bold text-9xl pt-3 pl-4">44</h2>
+                        <h5 class="flex items-center font-bold text-xs text-gray-1100 pt-4"><span
+                            class="h-2 w-2 rounded-lg bg-white-1200 mr-2"></span>Losing Trades</h5>
+                        <h2 class="text-dark-900 font-bold text-9xl pt-4 pl-4">30</h2>
+                      </div>
+                    </div>
+                    <div class="pl-3 pt-8 text-center">
+                      <p class="text-xs text-gray-1100 font-normal">You win % is higher on <span
+                          class="text-green-900 font-bold">12% </span>copared to <br>
+                        <span class="text-blue-900 font-bold">39 winning</span> <span class="font-bold">/ 36
+                          losing</span> past month.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 sm:w-1/2 w-full p-3 break">
+                  <div class="bg-gray-100 pt-2 px-3 pb-4 rounded-lg flex-1">
+                    <div class="flex justify-between items-center">
+                      <h5 class="text-10xl font-bold text-dark-900">Avg. Trade <br>
+                        Gain / Loss</h5>
+                      <button id="dropdownDefault2" data-dropdown-toggle="dropdown2"
+                        class="text-white-1000 font-semibold bg-blue-900   focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-base px-3 py-2 text-center inline-flex items-center"
+                        type="button">Month<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.6651 9.52436C16.958 9.81725 16.958 10.2921 16.6651 10.585L12.7732 14.4769C12.6326 14.6176 12.4418 14.6966 12.2429 14.6966C12.044 14.6966 11.8532 14.6176 11.7125 14.4769L7.82065 10.585C7.52776 10.2921 7.52776 9.81725 7.82065 9.52436C8.11355 9.23146 8.58842 9.23146 8.88131 9.52436L12.2429 12.8859L15.6044 9.52436C15.8973 9.23146 16.3722 9.23146 16.6651 9.52436Z"
+                            fill="#FCFAFF" />
+                        </svg>
+                      </button>
+                      <!-- Dropdown menu -->
+                      <div id="dropdown2"
+                        class="hidden z-10 w-28 bg-white-1000 rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 410.4px, 0px);"
+                        data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
+                        <ul class="py-1 text-sm text-dark-1000 dark:text-gray-200" aria-labelledby="dropdownDefault2">
+                          <li>
+                            <a href="#"
+                              class="block py-2 px-4 text-dark-1000 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Week</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block py-2 px-4 text-dark-1000 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Year</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-8">
+                      <img src="images/bar2.png" class="img-fluid img-width">
+                      <div class="placeholder-gray-300">
+                        <h5 class="flex items-center font-bold text-xs text-gray-1100 "><span
+                            class="h-2 w-2 rounded-lg bg-green-900 mr-2"></span>Average Gain</h5>
+                        <h2 class="text-dark-900 font-bold text-9xl pt-3 pl-4">64 %</h2>
+                        <h5 class="flex items-center font-bold text-xs text-gray-1100 pt-4"><span
+                            class="h-2 w-2 rounded-lg bg-red-900 mr-2"></span>Average Loss</h5>
+                        <h2 class="text-dark-900 font-bold text-9xl pt-4 pl-4">36 %</h2>
+                      </div>
+                    </div>
+                    <div class="pl-3 pt-8 text-center">
+                      <p class="text-xs text-gray-1100 font-normal">You gain % is higher on<span
+                          class="text-green-900 font-bold"> 8% </span> copared to <br>
+                        <span class="text-green-900 font-bold">56 %</span> <span class="text-red-1000 font-bold"> / 44
+                          %</span> past month.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 sm:w-1/2 w-full p-3 ">
+                  <div class="bg-gray-100 pt-2 px-3 pb-3 rounded-lg flex-1">
+                    <div class="flex justify-between">
+                      <h5 class="text-10xl font-bold text-dark-900">Largest Gain</h5>
+                      <img src="images/plus.svg" class="img-fluid">
+                    </div>
+                    <h2 class="text-2xl text-dark-900 font-bold">11,356 $ </h2>
+                    <p class="text-xs text-gray-1100 font-normal pt-2">You have largest gain on <span
+                        class="text-blue-900 font-bold"> Jul 2022</span></p>
+                    <a href="#" class="text-xs text-dark-900 font-medium underline">View more</a>
+                  </div>
+                  <div class="bg-gray-100 pt-2 px-3 pb-3 rounded-lg mt-3">
+                    <div class="flex justify-between">
+                      <h5 class="text-10xl font-bold text-dark-900">Largest Loss</h5>
+                      <img src="images/plus2.svg" class="img-fluid">
+                    </div>
+                    <h2 class="text-2xl text-dark-900 font-bold">1,845 $</h2>
+                    <p class="text-xs text-gray-1100 font-normal pt-2">You have largest gain on <span
+                        class="text-blue-900 font-bold"> Jul 2022</span></p>
+                    <a href="#" class="text-xs text-dark-900 font-medium underline">View more</a>
+                  </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 sm:w-1/2 w-full p-3">
+                  <div class="bg-gray-100 pt-2 px-3 pb-3 rounded-lg flex-1 fix-height">
+                    <div class="flex justify-between items-center">
+                      <h5 class="text-11xl font-bold text-dark-900">Trading Period</h5>
+                    </div>
+                    <img src="images/grapgh.png" class="mt-2 mx-auto">
+                    <div class="pl-3 pt-8 flex justify-between items-center">
+                      <p class="text-s text-gray-1100 font-semibold">Most traded <br>
+                        period</p>
+                      <div>
+                        <h5 class="text-10xl font-bold text-dark-900">Before Lunch</h5>
+                        <p class="text-s text-gray-1100 font-semibold">08:00 AM 12:00 PM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white-500 py-4 pl-3.5 pr-6 rounded-lg my-5 mx-2">
+                <div class="md:flex items-center justify-between">
+                  <h2 class="text-2xl md:text-left text-center font-bold text-dark-900">Trades</h2>
+                  <div class="md:flex mt-lg-0 mt-3">
+                    <ul class="flex bg-gray-1000 center px-1.5 py-3 w-57  rounded-lg">
+                      <li><a href="#" class="py-2.5 px-5 text-12xl bg-dark-1000 rounded-lg text-white-1000">All</a></li>
+                      <li><a href="#" class="py-2.5 px-5  text-12xl rounded-lg text-gray-1100">Open</a></li>
+                      <li><a href="#" class="py-2.5 px-5 text-12xl  rounded-lg text-gray-1100">Closed</a></li>
+                    </ul>
+                    <ul class="flex bg-gray-1000 px-1.5 center py-3 w-59 rounded-lg md:ml-12 md:mt-0 mt-5">
+                      <li><a href="#" class="py-2.5 px-5 text-12xl  rounded-lg text-gray-1100">Year</a></li>
+                      <li><a href="#" class="py-2.5 px-5   text-12xl bg-dark-1000 rounded-lg text-white-1000">Month</a>
+                      </li>
+                      <li><a href="#" class="py-2.5 px-5 text-12xl  rounded-lg text-gray-1100">Week</a></li>
+                      <li><a href="#" class="py-2.5 px-5 text-12xl  rounded-lg text-gray-1100">Day</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="overflow-x-auto relative  mt-5">
+                  <table class="lg:w-full w-800">
+                    <thead class=" uppercase bg-white-1000 ">
+                      <tr>
+                        <th scope="col" class="py-2 pl-3  text-left text-12xl text-gray-1200 font-medium">
+                          Name
+                        </th>
+                        <th scope="col" class="py-2  text-right text-12xl text-gray-1200 font-medium">
+                          Open
+                        </th>
+                        <th scope="col" class="py-2  text-right text-12xl text-gray-1200 font-medium">
+                          Close
+                        </th>
+                        <th scope="col" class="py-2  text-right text-12xl text-gray-1200 font-medium">
+                          P&L
+                        </th>
+                        <th scope="col" class="py-2  text-right text-12xl text-gray-1200 font-medium">
+                          Volume
+                        </th>
+                        <th scope="col" class="py-2  text-right text-12xl text-gray-1200 font-medium">
+                          Execs
+                        </th>
+                        <th scope="col" class="py-2 text-right text-12xl text-gray-1200 font-medium">
+                          Status
+                        </th>
+                        <th scope="col" class="py-2  text-right text-12xl text-gray-1200 font-medium">
+                          Trades
+                        </th>
+                        <th scope="col" class="py-2 pr-3 text-right text-12xl text-gray-1200 font-medium">
+                          Action
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-white border-b text-left  hover:bg-blue-1000 ">
+                        <th scope="row" class="py-2 pl-3 font-semibold text-base text-dark-1100 whitespace-nowrap">
+                          Addidas Ag
+                        </th>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26<br> <span class="font-normal text-gray-1100">09:09:10</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26 <br> <span class="font-normal text-gray-1100">16:45:30</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-red-1000">
+                          <img src="images/drop-arrow.svg" class="inline"> 37.55 % <br>
+                          1455.45 $
+                        </td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          6 </td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          12</td>
+                        <td class="py-4  text-right ">
+                          <span><a href="#"
+                              class="bg-green-1000 text-green-900 py-2 rounded-lg font-medium px-4">Open</a></span>
+                        </td>
+                        <td class="py-4  text-right  font-semibold text-base text-dark-1100">
+                          <img src="images/arrow.svg" class="inline"> 12
+                        </td>
+                        <td class="py-4 pr-3 text-right font-normal text-base text-dark-1100 underline">
+                          <a href="#">Details</a>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b text-left  hover:bg-blue-1000 ">
+                        <th scope="row" class="py-2 pl-3 font-semibold text-base text-dark-1100 whitespace-nowrap">
+                          RIOT Ent
+                        </th>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26<br> <span class="font-normal text-gray-1100">09:09:10</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26 <br> <span class="font-normal text-gray-1100">16:45:30</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-green-900">
+                          <img src="images/up-arrow.svg" class="inline"> 12.55 % <br>
+                          652.45 $
+                        </td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          8</td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          15</td>
+                        <td class="py-4  text-right ">
+                          <span><a href="#"
+                              class="bg-red-1100 text-red-900 py-2 rounded-lg font-medium px-4">Closed</a></span>
+                        </td>
+                        <td class="py-4  text-right  font-semibold text-base text-dark-1100">
+                          <img src="images/arrow.svg" class="inline"> 33
+                        </td>
+                        <td class="py-4 pr-3 text-right font-normal text-base text-dark-1100 underline">
+                          <a href="#">Details</a>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b text-left  hover:bg-blue-1000 ">
+                        <th scope="row" class="py-2 pl-3 font-semibold text-base text-dark-1100 whitespace-nowrap">
+                          Addidas Ag
+                        </th>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26<br> <span class="font-normal text-gray-1100">09:09:10</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26 <br> <span class="font-normal text-gray-1100">16:45:30</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-red-1000">
+                          <img src="images/drop-arrow.svg" class="inline"> 4.55 % <br>
+                          352.88 $
+                        </td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          4</td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          12</td>
+                        <td class="py-4  text-right ">
+                          <span><a href="#"
+                              class="bg-green-1000 text-green-900 py-2 rounded-lg font-medium px-4">Open</a></span>
+                        </td>
+                        <td class="py-4  text-right  font-semibold text-base text-dark-1100">
+                          <img src="images/arrow.svg" class="inline"> 9
+                        </td>
+                        <td class="py-4 pr-3 text-right font-normal text-base text-dark-1100 underline">
+                          <a href="#">Details</a>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b text-left  hover:bg-blue-1000 ">
+                        <th scope="row" class="py-2 pl-3 font-semibold text-base text-dark-1100 whitespace-nowrap">
+                          Addidas Ag
+                        </th>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26<br> <span class="font-normal text-gray-1100">09:09:10</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26 <br> <span class="font-normal text-gray-1100">16:45:30</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-green-900">
+                          <img src="images/up-arrow.svg" class="inline"> 4.91 % <br>
+                          2544.66 $
+                        </td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          3</td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          18</td>
+                        <td class="py-4  text-right ">
+                          <span><a href="#"
+                              class="bg-red-1100 text-red-900 py-2 rounded-lg font-medium px-4">Closed</a></span>
+                        </td>
+                        <td class="py-4  text-right  font-semibold text-base text-dark-1100">
+                          <img src="images/arrow.svg" class="inline"> 44
+                        </td>
+                        <td class="py-4 pr-3 text-right font-normal text-base text-dark-1100 ">
+                          <a href="#"><img src="images/pecile.svg" class="inline"></a> <a href="#"><img
+                              src="images/trash.svg" class="inline ml-2"></a>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b text-left  hover:bg-blue-1000 ">
+                        <th scope="row" class="py-2 pl-3 font-semibold text-base text-dark-1100 whitespace-nowrap">
+                          Addidas Ag
+                        </th>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26<br> <span class="font-normal text-gray-1100">09:09:10</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26 <br> <span class="font-normal text-gray-1100">16:45:30</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-red-1000">
+                          <img src="images/drop-arrow.svg" class="inline"> 37.55 % <br>
+                          1455.45 $
+                        </td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          6</td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          12</td>
+                        <td class="py-4  text-right ">
+                          <span><a href="#"
+                              class="bg-green-1000 text-green-900 py-2 rounded-lg font-medium px-4">Open</a></span>
+                        </td>
+                        <td class="py-4  text-right  font-semibold text-base text-dark-1100">
+                          <img src="images/arrow.svg" class="inline">24
+                        </td>
+                        <td class="py-4 pr-3 text-right font-normal text-base text-dark-1100 ">
+                          <a href="#"><img src="images/pecile.svg" class="inline"></a> <a href="#"><img
+                              src="images/trash.svg" class="inline ml-2"></a>
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b text-left  hover:bg-blue-1000 ">
+                        <th scope="row" class="py-2 pl-3 font-semibold text-base text-dark-1100 whitespace-nowrap">
+                          Addidas Ag
+                        </th>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26<br> <span class="font-normal text-gray-1100">09:09:10</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-dark-1100">
+                          22-07-26 <br> <span class="font-normal text-gray-1100">16:45:30</span>
+                        </td>
+                        <td class="py-4 text-right  font-semibold text-base text-red-1000">
+                          <img src="images/drop-arrow.svg" class="inline"> 37.55 % <br>
+                          1455.45 $
+                        </td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          6</td>
+                        <td class="py-4  text-right font-semibold text-base text-dark-1100">
+                          12</td>
+                        <td class="py-4  text-right ">
+                          <span><a href="#"
+                              class="bg-green-1000 text-green-900 py-2 rounded-lg font-medium px-4">Open</a></span>
+                        </td>
+                        <td class="py-4  text-right  font-semibold text-base text-dark-1100">
+                          <img src="images/arrow.svg" class="inline">7
+                        </td>
+                        <td class="py-4 pr-3 text-right font-normal text-base text-dark-1100 ">
+                          <a href="#"><img src="images/pecile.svg" class="inline"></a> <a href="#"><img
+                              src="images/trash.svg" class="inline ml-2"></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.transform = " translateX(-5px)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.transform = "translateX(-259px)";
+    }
+
+    $(document).ready(function () {
+      $("#button").click(function () {
+        $(".hide").toggleClass("none");
+        $(".hidee").toggleClass("show");
+        $(".logo").toggleClass("hiddenn");
+        $(".border1").toggleClass("space");
+        $(".left").toggleClass("divide");
+        $(".menu-collapse").toggleClass("full");
+      });
+    });
+    function changeImage() {
+      var image = document.getElementById('button');
+      if (image.src.match("hamburger")) {
+        image.src = "images/change.svg";
+      } else {
+        image.src = "images/hamburger.svg";
+      }
+    }
+
+  </script>
+</body>
+
+</html>
